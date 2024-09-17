@@ -29,6 +29,7 @@ def find(name):
             {},
         )
         return NewClass
+    print(f"-----------name: {name}-----------")
     return __modules__[name]
 
 

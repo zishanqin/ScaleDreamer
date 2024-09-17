@@ -35,7 +35,7 @@ system:
   geometry_type: "Hyper-iNGP"
   geometry:
     radius: 2.0 # nan for 1.0
-    normal_type: "analytic" # "finite_difference"
+    normal_type: "finite_difference" # "analytic" not implemented
     finite_difference_normal_eps: 0.01
 
     sdf_bias: sphere
@@ -145,8 +145,8 @@ system:
     lambda_sparsity: 1.
     lambda_opaque: 0.
     # # missing
-    # lambda_z_variance: 0.
-    # lambda_eikonal: [1, 100., 1., 5000] # first 1/10 iterations
+    lambda_z_variance: 0.
+    lambda_eikonal: [1, 100., 1., 5000] # first 1/10 iterations
 
   optimizer:
     name: Adam

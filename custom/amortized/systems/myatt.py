@@ -15,7 +15,7 @@ from functools import partial
 from tqdm import tqdm
 from threestudio.utils.misc import barrier
 
-@threestudio.register("my-att-system")
+@threestudio.register("dreamfusion-system")
 class MyATTSystem(BaseLift3DSystem):
     @dataclass
     class Config(BaseLift3DSystem.Config):
